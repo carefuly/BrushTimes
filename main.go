@@ -129,15 +129,53 @@ func (t *RedBlackTree) PrintInOrder() {
 	inOrderTraversal(t.Root)
 }
 
-func main() {
-	tree := RedBlackTree{}
-	// 插入示例数据
-	tree.Insert(10)
-	tree.Insert(20)
-	tree.Insert(30)
-	tree.Insert(5)
-	tree.Insert(15)
+func Gz() {
+	// 初始欠款
+	initialDebt := 5500.0
 
-	// 打印红黑树节点信息
-	tree.PrintInOrder()
+	// 已支付金额
+	payments := []float64{
+		3100, 200, 500, 400, 200, 800, 800, // 9月
+		1000, 2500, 500, // 10月
+		1000, 100, 300, 1000, 1100, 200, 200, 1100, // 11月
+		1300, 200, 500, 450, 500, 2000, 1000, // 12月
+		8000, 200, 500, 500, 200, 100, // 1月
+		2000, 80, 200, 1300, 300, 800, // 2月
+	}
+
+	// 计算总已支付金额
+	totalPayments := 0.0
+	for _, payment := range payments {
+		totalPayments += payment
+	}
+
+	fmt.Println(totalPayments)
+
+	// 每月工资
+	monthlySalary := 7500.0
+
+	// 计算应得工资
+	months := 5 // 9月到1月共5个月
+	totalSalary := float64(months) * monthlySalary
+
+	// 剩余工资
+	remainingSalary := totalSalary - totalPayments
+
+	repairSalary := float64(2500)
+
+	fmt.Printf("总剩余工资: %.2f元\n", remainingSalary + initialDebt + repairSalary)
+}
+
+func main() {
+	// tree := RedBlackTree{}
+	// // 插入示例数据
+	// tree.Insert(10)
+	// tree.Insert(20)
+	// tree.Insert(30)
+	// tree.Insert(5)
+	// tree.Insert(15)
+	//
+	// // 打印红黑树节点信息
+	// tree.PrintInOrder()
+	Gz()
 }

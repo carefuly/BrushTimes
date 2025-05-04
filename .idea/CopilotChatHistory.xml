@@ -4,6 +4,12 @@
     <option name="conversations">
       <list>
         <Conversation>
+          <option name="createTime" value="1745768405732" />
+          <option name="id" value="019677e7dae475888ead00c228fd3d33" />
+          <option name="title" value="新对话 2025年4月27日 23:40:05" />
+          <option name="updateTime" value="1745768405732" />
+        </Conversation>
+        <Conversation>
           <option name="createTime" value="1745678871945" />
           <option name="id" value="01967291ad89781f8addcd9fd617a4de" />
           <option name="title" value="新对话 2025年4月26日 22:47:51" />

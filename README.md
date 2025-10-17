@@ -3,5 +3,7 @@
 ```go
 package main
 
+// 1
+// 2
 ```
 
